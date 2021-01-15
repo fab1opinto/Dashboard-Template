@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Dashboard Template em Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+
+  <!--Jquery-->
+  <script src="jquery-3.5.1.js"></script>
+
+  
+</head>
+
+<body>
+
+<!--Header-->
+<!--p-0 = padding: 0; flex-nowrap: deixar tudo na mesma linha; fixed-top = menu fixo no topo-->
+<header class="navbar navbar-dark bg-dark p-0 flex-nowrap fixed-top shadow">
+<!--mr-0 = margin-right: 0-->
+<a class="navbar-brand col-2 mr-0" href="#">Logotipo</a>
+<!--Barra de Pesquisa, Busca-->
+<input class="form-control form-control-dark" type="text" placeholder="Pesquisar" arial-label="Search">
+
+<!--pl- = padding left. pr- = padding right; px = padding no eixo x; py = padding no eixo y-->
+<div class="navbar-nav px-3">
+
+<a class="nav-item nav-link py-0 text-nowrap" href="#">Sign out</a>
+
+</div>
+
+</header>
+<!--/Header-->
+
+<!--Sidebar-->
+  <nav class="col-2 bg-light sidebar">
+   
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            Sidebar <span class=""></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 2
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 3
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 4
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 5
+          </a>
+        </li>
+
+
+          
+      </ul>
+
+      <h6 class="sidebar-heading px-3 mt-4">
+        <span>Administrativo</span>
+      </h6>
+
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 2
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 3
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Opção 4
+          </a>
+        </li>
+      </ul>
+    
+  </nav>
+<!--/Sidebar-->
+
+  <main role="main" class="col-10 ml-auto px-4">
+    <!--d-flex = display: flex e mt-4 = margin-top: 4px-->
+    <div class="d-flex justify-content-between align-items-center mt-4 pb-2 mb-3">
+    <h1 class="h2">Dashboard</h1>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline">1</button>
+        <button type="button" class="btn btn-outline">2</button>
+    </div>
+    
+    <div class="dropdown">
+    <button class="btn btn-outline dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+    Mais Opções
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+    <li><button class="dropdown-item" type="button">Ação</button></li>
+    <li><button class="dropdown-item" type="button">Outra Ação</button></li>
+    <li><button class="dropdown-item" type="button">Mais uma ação</button></li>
+    </ul>
+    </div>
+
+    </div>
+
+    </div>
+    <hr>
+
+
+    <div class="">
+      <h1 class="">Corpo da Página</h1>
+      <div class="">
+        <div class="">
+          <button class="">Botão 1</button>
+          <button class="">Botão 2</button>
+        </div>
+
+        <div class="">
+          <button class="" type="button">
+            Botão 3
+          </button>
+          <div class="" >
+            <a class="" href="#">Opção 1</a>
+            <a class="" href="#">Opção 2</a>
+            <a class="" href="#">Opção 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cards-->
+
+    <section class="row">
+    <div class="col-3">
+      
+    <div class="card text-center" style="max-width: 18rem;">
+    <div class="card-header">Box</div>
+    <div class="card-body">
+    <h5 class="card-title">...</h5>
+    <a href="#" class="btn btn-link btn-lg">Saiba +</a>
+    </div>
+    </div>
+    
+    </div>
+    <div class="col-9 ml-auto">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Perfil</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tabpanel" aria-controls="contact" aria-selected="false">Contatos</a>
+    </li>
+    </ul>
+    <div class="tab-content" id="mytabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">Conteudo 1</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">Conteudo 2</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">Conteudo 3</div>
+    </div>
+
+
+    </div>
+    </section>
+
+    <!--/Cards-->
+
+    <div class="">
+
+     
+        <div class="">
+
+          <ul class="" id="">
+            <li class="">
+              <a class="" id="" href="#">Opção 1</a>
+            </li>
+            <li class="">
+              <a class="" id="" href="#" >Opção 2</a>
+            </li>
+
+          </ul>
+          <!-- aqui entra o conteudo das abas -->
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!--Tabela-->
+
+    <h2>Tabela</h2>
+    <div class="">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item 1</th>
+            <th>Item 2</th>
+            <th>Item 3</th>
+            <th>Item 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1,001</td>
+            <td>Lorem</td>
+            <td>ipsum</td>
+            <td>dolor</td>
+            <td>sit</td>
+          </tr>
+          <tr>
+            <td>1,002</td>
+            <td>amet</td>
+            <td>consectetur</td>
+            <td>adipiscing</td>
+            <td>elit</td>
+          </tr>
+          <tr>
+            <td>1,003</td>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <td>1,003</td>
+            <td>libero</td>
+            <td>Sed</td>
+            <td>cursus</td>
+            <td>ante</td>
+          </tr>
+          <tr>
+            <td>1,004</td>
+            <td>dapibus</td>
+            <td>diam</td>
+            <td>Sed</td>
+            <td>nisi</td>
+          </tr>
+          <tr>
+            <td>1,005</td>
+            <td>Nulla</td>
+            <td>quis</td>
+            <td>sem</td>
+            <td>at</td>
+          </tr>
+          <tr>
+            <td>1,006</td>
+            <td>nibh</td>
+            <td>elementum</td>
+            <td>imperdiet</td>
+            <td>Duis</td>
+          </tr>
+          <tr>
+            <td>1,007</td>
+            <td>sagittis</td>
+            <td>ipsum</td>
+            <td>Praesent</td>
+            <td>mauris</td>
+          </tr>
+          <tr>
+            <td>1,008</td>
+            <td>Fusce</td>
+            <td>nec</td>
+            <td>tellus</td>
+            <td>sed</td>
+          </tr>
+          <tr>
+            <td>1,009</td>
+            <td>augue</td>
+            <td>semper</td>
+            <td>porta</td>
+            <td>Mauris</td>
+          </tr>
+          <tr>
+            <td>1,010</td>
+            <td>massa</td>
+            <td>Vestibulum</td>
+            <td>lacinia</td>
+            <td>arcu</td>
+          </tr>
+          <tr>
+            <td>1,011</td>
+            <td>eget</td>
+            <td>nulla</td>
+            <td>Class</td>
+            <td>aptent</td>
+          </tr>
+          <tr>
+            <td>1,012</td>
+            <td>taciti</td>
+            <td>sociosqu</td>
+            <td>ad</td>
+            <td>litora</td>
+          </tr>
+          <tr>
+            <td>1,013</td>
+            <td>torquent</td>
+            <td>per</td>
+            <td>conubia</td>
+            <td>nostra</td>
+          </tr>
+          <tr>
+            <td>1,014</td>
+            <td>per</td>
+            <td>inceptos</td>
+            <td>himenaeos</td>
+            <td>Curabitur</td>
+          </tr>
+          <tr>
+            <td>1,015</td>
+            <td>sodales</td>
+            <td>ligula</td>
+            <td>in</td>
+            <td>libero</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+   
+  </main>
+
+  <!--Main-->
+
+
+  <!-- Bootstrap JavaScript
+  ================================================== -->
+ 
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>   
+
+</body>
+</html>
